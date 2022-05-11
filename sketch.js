@@ -1,8 +1,8 @@
 var x=0;
 var y=0;
 var w=20;
-var screenW=1600;
-var screenH=1600;
+var screenW=1000;
+var screenH=1000;
 function setup() {
   createCanvas(screenW, screenH);
   
@@ -11,10 +11,9 @@ function setup() {
 function draw() {
   background(220);
   while(x*y<=screenW*screenH){
-    fill(x,(x+y)/2,y);
-    noStroke();
-rect(x,y,w,w);
-rect(screenW-x,screenH-y,w,w);
+    stroke(x,(x+y)/2,y);
+    strokeWeight(w)
+    line(x,y,screenW-x,screenH-y);
   x+=w;
   if(x>=screenW){
   x=0;
