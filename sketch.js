@@ -5,6 +5,7 @@ var screenW=1600;
 var screenH=1600;
 function setup() {
   createCanvas(screenW, screenH);
+  
 }
 
 function draw() {
@@ -12,8 +13,8 @@ function draw() {
   while(x*y<=screenW*screenH){
     fill(x,(x+y)/2,y);
     noStroke();
-  drawingContext.shadowOffsetX = w/2;
-  drawingContext.shadowOffsetY = w/2;
+  drawingContext.shadowOffsetX = 0-w/2;
+  drawingContext.shadowOffsetY = 0-w/2;
   drawingContext.shadowBlur = 10;
   drawingContext.shadowColor = 'black';
 rect(x,y,w,w);
