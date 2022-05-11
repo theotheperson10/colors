@@ -13,7 +13,7 @@ function draw() {
   while(x*y<=screenW*screenH){
     stroke(x,(x+y)/2,y);
     strokeWeight(w/2)
-    line(x,y,screenW-x,screenH-y);
+    line(x,y,mouseX,mouseY);
   x+=w;
   if(x>=screenW){
   x=0;
