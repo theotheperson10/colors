@@ -13,11 +13,8 @@ function draw() {
   while(x*y<=screenW*screenH){
     fill(x,(x+y)/2,y);
     noStroke();
-  drawingContext.shadowOffsetX = 0-w/2;
-  drawingContext.shadowOffsetY = 0-w/2;
-  drawingContext.shadowBlur = 10;
-  drawingContext.shadowColor = 'black';
 rect(x,y,w,w);
+rect(screenW-x,screenH-y,w,w);
   x+=w;
   if(x>=screenW){
   x=0;
