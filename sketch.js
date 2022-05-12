@@ -14,9 +14,6 @@ function draw() {
     fill(x,(x+y)/2,y);
     noStroke()
     rect(x,y,w,w);
-    rect(screenW-x,screenH-y,w,w);
-    rect(screenW,screenH-y,w,w);
-    rect(screenW-x,screenH,w,w);
   x+=w;
   if(x>=screenW+w){
   x=0;
