@@ -1,8 +1,8 @@
 var x=0;
 var y=0;
 var w=20;
-var screenW=900;
-var screenH=900;
+var screenW=600;
+var screenH=600;
 function setup() {
   createCanvas(screenW, screenH);
   
