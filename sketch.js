@@ -12,7 +12,7 @@ function draw() {
   background(220);
   while(x*y<=screenW*screenH){
     fill(x,(x+y)/2,y);
-    noStroke()
+    strokeWeight(w/4);
     rect(x,y,w,w);
   x+=w;
   if(x>=screenW+w){
