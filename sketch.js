@@ -11,10 +11,9 @@ function setup() {
 function draw() {
   background(220);
   while(x*y<=screenW*screenH){
-    stroke(x,(x+y)/2,y);
-    strokeWeight(w*2)
-    line(x,y,screenW/2,screenH/2);
-    line(screenW-x,screenH-y,screenW/2,screenH/2);
+    fill(x,(x+y)/2,y);
+    noStroke()
+    rect(x,y,w,w);
   x+=w;
   if(x>=screenW+w){
   x=0;
