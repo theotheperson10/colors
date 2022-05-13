@@ -11,13 +11,13 @@ function setup() {
 function draw() {
   background(220);
   while(x*y<=screenW*screenH){
-    stroke(x,0,y);
-    strokeWeight(w);
-    line(x,y,(x+y)/2*x,(x+y)/2*y);
-  x+=w;
-  if(x>=screenW+w){
-  x=0;
-  y+=w;}
+    fill(x,0,y);
+    noStroke(w);
+    rect(x,y,w,w);
+  y+=w;
+  if(y>=screenW+w){
+  y=0;
+  x+=w;}
   }
   x=0;
   y=0;
